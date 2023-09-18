@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace _4ITAsk2IdleClicker
 {
     public partial class Form1 : Form
@@ -13,14 +15,26 @@ namespace _4ITAsk2IdleClicker
             }
         }
         public Form1()
-        {
+        {   
             InitializeComponent();
             VytvorPriserku();
         }
 
         private void VytvorPriserku()
         {
-            KlavesovaPriserka priserka = new KlavesovaPriserka(10,"liveMatavReaction.png","Matav", 3);
+
+            Type typPriserky = typeof(Priserka);
+            Assembly assembly = Assembly.GetExecutingAssembly();
+
+            List<TypeInfo> seznamTrid = assembly.DefinedTypes.Where(x => typPriserky.IsAssignableFrom(x)).ToList();
+
+            int nahodnejIndex =  Random.Shared.Next(0, seznamTrid.Count);
+            object? obj = Activator.CreateInstance(seznamTrid[nahodnejIndex].AsType());
+            
+            Priserka priserka = obj as Priserka;
+
+            KeyDown += priserka.KlavesovaPriserka_KeyDown;
+            priserka.Select();
             priserka.OnSmrt += Priserka_OnSmrt;
             panel1.Controls.Add(priserka);
 
@@ -33,6 +47,15 @@ namespace _4ITAsk2IdleClicker
             PocetKorunek += priserka.PenizkyVPenezence;
             VytvorPriserku();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(PocetKorunek >= 15)
+            {
+                ManazerHrace.Instance.Poskozeni++;
+                PocetKorunek -= 15;
+            }
         }
     }
 }

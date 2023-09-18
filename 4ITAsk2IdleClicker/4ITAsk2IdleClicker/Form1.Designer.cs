@@ -48,6 +48,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Upgrade poškození: 50 CZK ";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 

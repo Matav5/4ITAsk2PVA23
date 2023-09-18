@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker.csproj",
+      "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk2PVA23\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker.csproj",
       "projectName": "4ITAsk2IdleClicker",
-      "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker.csproj",
+      "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2PVA23\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker.csproj",
       "packagesPath": "C:\\Users\\Matav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\obj\\",
+      "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2PVA23\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Matav\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -34,6 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "KlavesovaPriserka";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KlavesovaPriserka_KeyDown);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.KlavesovaPriserka_PreviewKeyDown);

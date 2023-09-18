@@ -37,12 +37,12 @@ namespace _4ITAsk2IdleClicker
         protected string jmeno;
         protected int penizkyVPenezence;
         public int PenizkyVPenezence => penizkyVPenezence;
-        private Priserka()
+        public Priserka() : this(10, "liveMatavReaction.png", "Matav", 3)
+        {
+        }
+        public Priserka(float zivoty, string cestaKObrazku, string jmeno, int penizkyVPenezence)
         {
             InitializeComponent();
-        }
-        public Priserka(float zivoty, string cestaKObrazku, string jmeno, int penizkyVPenezence) : this()
-        {
             this.zivoty = zivoty;
             this.obrazek = Image.FromFile(cestaKObrazku);
             this.jmeno = jmeno;
@@ -60,14 +60,16 @@ namespace _4ITAsk2IdleClicker
             progressBar1.Value = (int)zivoty;
         }
 
-        private void Priserka_MouseClick(object sender, MouseEventArgs e)
+        protected virtual void Priserka_MouseClick(object sender, MouseEventArgs e)
         {
-            Zasah();
+            Zasah(ManazerHrace.Instance.Poskozeni);
         }
-
-        public void Zasah()
+        public virtual void KlavesovaPriserka_KeyDown(object sender, KeyEventArgs e)
         {
-            Zivoty--;
+        }
+        public void Zasah(int poskozeni = 1)
+        {
+            Zivoty -= poskozeni;
         }
     }
 }

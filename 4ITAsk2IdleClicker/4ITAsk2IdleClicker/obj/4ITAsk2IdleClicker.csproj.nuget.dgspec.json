@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matav\\source\\repos\\4ITAsk2PVA23\\4ITAsk2Opak\\4ITAsk2Opak\\4ITAsk2Opak.csproj": {}
+    "C:\\Users\\Matav\\source\\repos\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matav\\source\\repos\\4ITAsk2PVA23\\4ITAsk2Opak\\4ITAsk2Opak\\4ITAsk2Opak.csproj": {
+    "C:\\Users\\Matav\\source\\repos\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk2PVA23\\4ITAsk2Opak\\4ITAsk2Opak\\4ITAsk2Opak.csproj",
-        "projectName": "4ITAsk2Opak",
-        "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2PVA23\\4ITAsk2Opak\\4ITAsk2Opak\\4ITAsk2Opak.csproj",
+        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker.csproj",
+        "projectName": "4ITAsk2IdleClicker",
+        "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker.csproj",
         "packagesPath": "C:\\Users\\Matav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2PVA23\\4ITAsk2Opak\\4ITAsk2Opak\\obj\\",
+        "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2IdleClicker\\4ITAsk2IdleClicker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matav\\AppData\\Roaming\\NuGet\\NuGet.Config",

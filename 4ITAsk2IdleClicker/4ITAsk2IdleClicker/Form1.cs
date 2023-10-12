@@ -33,8 +33,8 @@ namespace _4ITAsk2IdleClicker
             
             Priserka priserka = obj as Priserka;
 
-            KeyDown += priserka.KlavesovaPriserka_KeyDown;
-            priserka.Select();
+// KeyDown += priserka.KlavesovaPriserka_KeyDown;
+            priserka.Focus();
             priserka.OnSmrt += Priserka_OnSmrt;
             panel1.Controls.Add(priserka);
 

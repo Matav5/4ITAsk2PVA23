@@ -13,6 +13,7 @@ namespace _4ITAsk2HledaniMin
     public partial class Policko : UserControl
     {
         private int pocetMinOkolo;
+        public int PocetMinOkolo => pocetMinOkolo;
 
         private bool maMinu;
 
@@ -30,6 +31,8 @@ namespace _4ITAsk2HledaniMin
         private int y;
 
         public int Y => y;
+
+        public event Action<Policko> OnPolickoKliknul;
         private Policko()
         {
             InitializeComponent();
@@ -39,23 +42,30 @@ namespace _4ITAsk2HledaniMin
             this.x = x;
             this.y = y;
             label1.Visible = false;
+            BackColor = Color.LightGray;
         }
 
         private void Policko_MouseClick(object sender, MouseEventArgs e)
         {
-
+            OnPolickoKliknul?.Invoke(this);
         }
 
         internal void VlozMinu()
         {
             maMinu = true;
-            BackColor = Color.Red;
         }
 
         internal void NastavPocetMin(int pocetMin)
         {
             pocetMinOkolo = pocetMin;
             label1.Text = pocetMin.ToString();
+        }
+
+        internal void OdhalSe()
+        {
+            jeOdhaleny = true;
+            label1.Show();
+            BackColor = Color.White;
         }
     }
 }

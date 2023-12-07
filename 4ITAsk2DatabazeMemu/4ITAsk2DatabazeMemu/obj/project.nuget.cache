@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PNN2wUc+Qfvd12VUJmWHeb/O5B/QrRQCU4LpNhTZbrQnDRpC64ylGEnmN3o4EElH/DQMj051ZS7jeJQR7WMD/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Matav\\source\\repos\\4ITAsk2DatabazeMemu\\4ITAsk2DatabazeMemu\\4ITAsk2DatabazeMemu.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matav\\.nuget\\packages\\mysqlconnector\\2.2.7\\mysqlconnector.2.2.7.nupkg.sha512"
+  ],
+  "logs": []
+}
